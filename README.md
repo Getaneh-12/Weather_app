@@ -24,26 +24,23 @@ A responsive weather application built using HTML, CSS, and JavaScript.
 
 ## Project Structure
 
-```text
+
 Weather_app/
 │
 ├── index.html
 ├── style.css
 ├── script.js
 ├── README.md
-│
-└── assets/
-    ├── clear.png
-    ├── cloudy.png
-    ├── rain.png
-    └── snow.png
+
 How to Run
-Clone the repository.
-Open the project folder in VS Code.
-Install the Live Server extension in VS Code.
-Right-click index.html.
-Select Open with Live Server.
-Enter a city name and click Search.
+1.Clone the repository.
+2.Open the project folder in VS Code.
+3.Install the Live Server extension in VS Code.
+4.Right-click index.html.
+5.Select Open with Live Server.
+6.Enter a city name and click Search.
+
+
 API
 
 This project uses the Open-Meteo API to retrieve weather and forecast information.
