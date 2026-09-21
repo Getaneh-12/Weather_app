@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(116, 185, 255), rgb(223, 230, 233));
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+input {
+    flex: 1;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 8px;
+    background: rgb(9, 132, 227);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(7, 107, 181);
+}
+
+#message {
+    min-height: 25px;
+    color: rgb(192, 57, 43);
+    font-weight: bold;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+#cityName {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 45px;
+    margin: 5px;
+}
+
+#condition {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: rgb(85, 85, 85);
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.forecast-card {
+    padding: 15px 8px;
+    border-radius: 10px;
+    background: rgb(241, 242, 246);
+}
+
+.forecast-card img {
+    width: 60px;
+}
+
+.forecast-card p {
+    margin: 5px 0;
+    text-transform: capitalize;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 700px;
+    }
+
+    .forecast {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .forecast {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .card {
+        padding: 18px 14px;
+    }
+
+    #temperature {
+        font-size: 36px;
+    }
+
+    .forecast {
+        grid-template-columns: 1fr;
+    }
+}
